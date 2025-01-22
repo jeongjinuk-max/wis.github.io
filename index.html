@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>범죄주의구간 지도</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+</head>
+<body>
+    <h1>범죄주의구간 지도</h1>
+    <div>
+        <button id="toggleKidLayer">어린이대상 범죄주의구간</button>
+        <button id="toggleElderLayer">노인대상 범죄주의구간</button>
+        <button id="toggleRapeLayer">성폭력 범죄주의구간</button>
+    </div>
+    <div id="zoomButtons">
+        <button id="zoomIn" class="zoomBtn">+</button>
+        <button id="zoomOut" class="zoomBtn">-</button>
+    </div>
+    <div id="map"></div>
+    <div id="legend">
+        <p>범죄주의율</p>
+        <div class="legend-bar">
+            <div class="high-crime"></div>
+            <div class="low-crime"></div>
+        </div>
+        <div class="legend-text">
+            <span class="left-text">높음</span>
+            <span class="right-text">낮음</span>
+        </div>
+    </div>
+    <div id="locationBtn">
+        <button id="location">내 위치 찾기</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
